@@ -1,0 +1,6 @@
+chad_page:
+  path: '/icecream'
+  defaults:
+    _content: 'Drupal\icecream\Controller\IcecreamController::page'
+  requirements:
+    _permission: 'view content'

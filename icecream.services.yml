@@ -1,0 +1,4 @@
+services:
+  plugin.manager.icecream:
+    class: Drupal\icecream\IcecreamManager
+    parent: default_plugin_manager
