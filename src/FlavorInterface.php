@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Provides Drupal\icecream\FlavorInterface
@@ -6,10 +7,12 @@
 
 namespace Drupal\icecream;
 
+use Drupal\Component\Plugin\PluginInspectionInterface;
+
 /**
  * Defines an interface for ice cream flavor plugins.
  */
-interface FlavorInterface {
+interface FlavorInterface extends PluginInspectionInterface {
 
   /**
    * Return the name of the ice cream flavor.
@@ -31,4 +34,5 @@ interface FlavorInterface {
    * @return string
    */
   public function slogan();
+  
 }
