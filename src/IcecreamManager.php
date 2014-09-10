@@ -27,7 +27,7 @@ class IcecreamManager extends DefaultPluginManager {
    *   The module handler to invoke the alter hook with.
    */
   public function __construct(\Traversable $namespaces, CacheBackendInterface $cache_backend, ModuleHandlerInterface $module_handler) {
-    parent::__construct('Plugin/Flavor', $namespaces, $module_handler, 'Drupal\icecream\Annotation\Flavor');
+    parent::__construct('Plugin/Flavor', $namespaces, $module_handler, 'Drupal\icecream\FlavorInterface', 'Drupal\icecream\Annotation\Flavor');
 
     $this->alterInfo('icecream_flavors_info');
     $this->setCacheBackend($cache_backend, 'icecream_flavors');
