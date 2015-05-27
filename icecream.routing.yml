@@ -1,6 +1,7 @@
 chad_page:
   path: '/icecream'
   defaults:
-    _content: 'Drupal\icecream\Controller\IcecreamController::page'
+    _controller: 'Drupal\icecream\Controller\IcecreamController::page'
+    _title: 'Ice cream flavors'
   requirements:
     _permission: 'view content'
